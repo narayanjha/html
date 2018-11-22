@@ -1,0 +1,3 @@
+> npm install -g @angular/cli
+> ng new angularsix
+> npm install -g json-server (add json file)
