@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Sagar",
+        "email":"sagar@sagar.com"
+    },
+    {
+        "id":2,
+        "name":"Narayan",
+        "email":"narayan@sagar.com"
+    },
+    {
+        "id":3,
+        "name":"Jitu",
+        "email":"jitu@sagar.com"
+    },
+    {
+        "id":4,
+        "name":"Sonal",
+        "email":"sonal@sagar.com"
+    }
+]
