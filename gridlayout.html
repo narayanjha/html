@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animated grid using jquery</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <style>
+    body{
+        background: #242424;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #blog-landing{
+        margin-top: 81px;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .white-panel{
+        position:absolute;
+        background: #ffffff;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+        padding: 10px;
+    } 
+    .white-panel:hover{
+        box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        margin-top: 15px;
+        transition: all 0.3s ease-in-out;
+    }  
+    </style>
+</head>
+<body>
+    <div class="container marketing">
+        <section id="blog-landing">
+            <article class="white-panel">
+                <img src="./images/boxmodel1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/boxmodel2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/boxmodel3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/boxmodel4.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech4.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech5.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech6.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech7.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech8.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech9.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech10.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech2.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech1.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            <article class="white-panel">
+                <img src="./images/tech3.jpg" alt="">
+                <h1><a href="">Putting</a></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem vel quis ad accusantium odit labore itaque nostrum neque officiis harum, distinctio facere hic quaerat quia illo obcaecati eveniet at cum.</p>
+            </article>
+            
+        </section>
+    </div>
+    <script src="./js/pinterest.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#blog-landing').pinterest_grid({
+                no_columns: 4,
+                padding_x: 10,
+                padding_y: 10,
+                single_column_breakpoint: 700
+            });
+        });
+    </script>
+</body>
+</html>
